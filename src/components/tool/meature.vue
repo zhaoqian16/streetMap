@@ -29,7 +29,7 @@ export default {
     this.$parent.viewer.entities.add({
       position: Cesium.Cartesian3.fromDegrees(113.72653841711949, 34.81400680763838),
       model: {
-        uri: '../../../static/3dModel/Cesium_Man.glb',
+        uri: 'static/3dModel/Cesium_Man.glb',
         scale: 10,
         minimumPixelSize: 64,
         heightReference: Cesium.HeightReference.CLAMP_TO_GROUND

@@ -2,20 +2,20 @@
   <div class="login">
     <div class="login-wrap">
       <div class="login-left">
-        <img src="../../static/images/login/text.png"
+        <img src="~static/images/login/text.png"
              alt="">
       </div>
       <div class="login-right">
         <div class="login-header">
-          <img src="../../static/images/login/logo.png"
+          <img src="~static/images/login/logo.png"
                alt="">
           <img class="city"
-               src="../../static/images/login/city.png"
+               src="~static/images/login/city.png"
                alt="">
         </div>
         <div class="login-content">
           <div class="username">
-            <img src="../../static/images/login/username.png"
+            <img src="~static/images/login/username.png"
                  alt="">
             <input type="text"
                    placeholder="账号"
@@ -25,7 +25,7 @@
                    @keyup.enter="focusPassword" />
           </div>
           <div class="password">
-            <img src="../../static/images/login/password.png"
+            <img src="~static/images/login/password.png"
                  alt="">
             <input type="password"
                    placeholder="密码"
@@ -406,7 +406,7 @@ export default {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  background: url("../../static/images/login/bg.jpg");
+  background: url("~static/images/login/bg.jpg");
   background-size: 100% 100%;
 }
 .login-wrap {

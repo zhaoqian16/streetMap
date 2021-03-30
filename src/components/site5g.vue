@@ -54,9 +54,9 @@
 <script>
 import 'cesium/Widgets/widgets.css';
 // let Cesium = require('cesium/Cesium');
-let Cesium = require('../../static/libs/cesium/ellipsoidFadeMarterialProperty')
-import data from '../../static/SampleData/5g/5g_stations.json' 
-import signalTower from '../../static/3dModel/signalTower-oversize.gltf'
+let Cesium = require('static/libs/cesium/ellipsoidFadeMarterialProperty')
+import data from 'static/SampleData/5g/5g_stations.json' 
+import signalTower from '/static/3dModel/signalTower-oversize.gltf'
 
 export default {
   components: {

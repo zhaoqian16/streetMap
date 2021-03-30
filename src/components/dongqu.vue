@@ -480,35 +480,35 @@
 import 'cesium/Source/Widgets/widgets.css';
 let Cesium = require('cesium/Source/Cesium');
 import CesiumNavigation from 'cesium-navigation-es6'; // 添加指南针插件
-require('../../static/libs/cesium/cesiumGeometry');
+require('static/libs/cesium/cesiumGeometry');
 import common from '../uitl/common'
 // 三维模型
-import shu from '../../static/3dModel/shu.gltf'
-import lajitongStreet from '../../static/3dModel/comp/lajitong_street.gltf'
-import lajitongBusiness from '../../static/3dModel/comp/lajitong_business.gltf'
-import lajitongPark from '../../static/3dModel/comp/lajitong_park.gltf'
-import ludeng from '../../static/3dModel/comp/ludeng.gltf'
-import car from '../../static/3dModel/CesiumMilkTruck.glb'
-import man from '../../static/3dModel/Cesium_Man.glb'
-import jgLudeng from '../../static/3dModel/comp/jinggai_ludeng1.gltf'
-import jgRanqi from '../../static/3dModel/comp/jinggai_ranqi.gltf'
-import jgReli from '../../static/3dModel/comp/jinggai_reli.gltf'
-import jgXiangfang from '../../static/3dModel/comp/jinggai_xiaofang.gltf'
-import jgShangshuiN from '../../static/3dModel/comp/jinggai_shangshui2.gltf'
-import jgShangshuiO from '../../static/3dModel/comp/jinggai_shangshui1.gltf'
-import jgTongxin from '../../static/3dModel/comp/jinggai_tongxin.gltf'
-import jgYushui from '../../static/3dModel/comp/jinggai_yushui.gltf'
-import jgQita from '../../static/3dModel/comp/jinggai_qita.gltf'
-import huajiaBase from '../../static/3dModel/comp/huajia_base.gltf'
-import huajiaTree from '../../static/3dModel/comp/huajia_tree.gltf'
-import yushuibizi from '../../static/3dModel/comp/yushuibizi.gltf'
+import shu from 'static/3dModel/shu.gltf'
+import lajitongStreet from 'static/3dModel/comp/lajitong_street.gltf'
+import lajitongBusiness from 'static/3dModel/comp/lajitong_business.gltf'
+import lajitongPark from 'static/3dModel/comp/lajitong_park.gltf'
+import ludeng from 'static/3dModel/comp/ludeng.gltf'
+import car from 'static/3dModel/CesiumMilkTruck.glb'
+import man from 'static/3dModel/Cesium_Man.glb'
+import jgLudeng from 'static/3dModel/comp/jinggai_ludeng1.gltf'
+import jgRanqi from 'static/3dModel/comp/jinggai_ranqi.gltf'
+import jgReli from 'static/3dModel/comp/jinggai_reli.gltf'
+import jgXiangfang from 'static/3dModel/comp/jinggai_xiaofang.gltf'
+import jgShangshuiN from 'static/3dModel/comp/jinggai_shangshui2.gltf'
+import jgShangshuiO from 'static/3dModel/comp/jinggai_shangshui1.gltf'
+import jgTongxin from 'static/3dModel/comp/jinggai_tongxin.gltf'
+import jgYushui from 'static/3dModel/comp/jinggai_yushui.gltf'
+import jgQita from 'static/3dModel/comp/jinggai_qita.gltf'
+import huajiaBase from 'static/3dModel/comp/huajia_base.gltf'
+import huajiaTree from 'static/3dModel/comp/huajia_tree.gltf'
+import yushuibizi from 'static/3dModel/comp/yushuibizi.gltf'
 // 组件
 import ModeSwitcher from './tool/modeSwitcher'
 import BasemapSwitcher from './tool/basemapSwitcher'
 // 部件数据
-import compData from '../../static/SampleData/3dComp.json'
-import BuildingData from '../../static/SampleData/3dBuilding.json'
-import orgData from '../../static/SampleData/3dOrg.json'
+import compData from 'static/SampleData/3dComp.json'
+import BuildingData from 'static/SampleData/3dBuilding.json'
+import orgData from 'static/SampleData/3dOrg.json'
 
 export default {
   components: {
@@ -1429,39 +1429,39 @@ export default {
       if(this.sceneMode == '3D'){
         var img = {
           person: {
-            online: require('../../static/images/icon/人员_在线.svg'),
-            offline: require('../../static/images/icon/人员_不在线.svg')
+            online: require('static/images/icon/人员_在线.svg'),
+            offline: require('static/images/icon/人员_不在线.svg')
           },
           video: {
-            online: require('../../static/images/icon/摄像头_在线.svg'),
-            offline: require('../../static/images/icon/摄像头_不在线.svg')
+            online: require('static/images/icon/摄像头_在线.svg'),
+            offline: require('static/images/icon/摄像头_不在线.svg')
           },
           car: {
-            online: require('../../static/images/icon/车辆_在线.svg'),
-            offline: require('../../static/images/icon/车辆_不在线.svg')
+            online: require('static/images/icon/车辆_在线.svg'),
+            offline: require('static/images/icon/车辆_不在线.svg')
           },
-          case: require('../../static/images/icon/案件.svg'),
+          case: require('static/images/icon/案件.svg'),
         }
       }else{
         var img = {
           person: {
-            online: require('../../static/images/icon/person_2.svg'),
-            offline: require('../../static/images/icon/person_1.svg')
+            online: require('static/images/icon/person_2.svg'),
+            offline: require('static/images/icon/person_1.svg')
           },
           video: {
-            online: require('../../static/images/icon/video_2.svg'),
-            offline: require('../../static/images/icon/video_1.svg')
+            online: require('static/images/icon/video_2.svg'),
+            offline: require('static/images/icon/video_1.svg')
           },
           car: {
-            online: require('../../static/images/icon/car_2.svg'),
-            offline: require('../../static/images/icon/car_1.svg')
+            online: require('static/images/icon/car_2.svg'),
+            offline: require('static/images/icon/car_1.svg')
           },
           case:{
-            onGoing: require('../../static/images/icon/case_1.svg'),
-            closed: require('../../static/images/icon/case_3.svg'),
+            onGoing: require('static/images/icon/case_1.svg'),
+            closed: require('static/images/icon/case_3.svg'),
           },
-          shop: require('../../static/images/icon/shop.svg'),
-          part: require('../../static/images/icon/part.svg')
+          shop: require('static/images/icon/shop.svg'),
+          part: require('static/images/icon/part.svg')
         }
       }
       
@@ -2730,7 +2730,7 @@ export default {
         },
         billboard: {
           show: this.viewer.scene.mode === Cesium.SceneMode.SCENE2D ? true : false,
-          image: require('../../static/images/car.png'),
+          image: require('static/images/car.png'),
           horizontalOrigin: Cesium.HorizontalOrigin.CENTER,
           verticalOrigin: Cesium.VerticalOrigin.BOTTOM,
           scale: 1,
@@ -3172,7 +3172,7 @@ export default {
 .infobox-inner {
   min-width: 400px;
   max-width: 400px;
-  background: url(../../static/images/detailBox.png) no-repeat;
+  background: url("~static/images/detailBox.png") no-repeat;
   /* background-color: #003a6c; */
   background-size: 100% 100%;
   /* opacity: 0.8; */
@@ -3225,7 +3225,7 @@ export default {
 .bindbox-inner {
   min-width: 300px;
   max-width: 400px;
-  background: url(../../static/images/detailBox.png) no-repeat;
+  background: url("~static/images/detailBox.png") no-repeat;
   /* background-color: #003a6c; */
   background-size: 100% 100%;
   /* opacity: 0.8; */
@@ -3280,7 +3280,7 @@ export default {
   top: 200px;
   left: 40%;
   transform: translate(-50%, 0);
-  background: url(../../static/images/detailBox.png) no-repeat;
+  background: url("~static/images/detailBox.png") no-repeat;
   background-size: 100% 100%;
   padding: 10px 20px;
   color: #fff;
